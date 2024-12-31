@@ -32,8 +32,8 @@ The dataset may contain missing or imbalanced data, especially in categorical va
 ## Project Goals
 
 ### Metrics to Define:
-- **Churn Rate**: The percentage of customers who have exited the bank (Exited = 1).
-- **Retention Rate**: The percentage of customers who have stayed with the bank (Exited = 0).
+- **Churn Rate**: The percentage of customers who have exited (Exited = 1).
+- **Retention Rate**: The percentage of customers who have stayed (Exited = 0).
 - **Key Predictors**: Identify the factors that most influence customer churn, such as age, balance, credit score, and active membership status.
 
 ### Techniques to Apply:
