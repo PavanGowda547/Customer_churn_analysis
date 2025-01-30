@@ -1,4 +1,4 @@
-# Churn Modeling Analysis
+# Customer Churn Analysis
 
 ![Image](https://github.com/user-attachments/assets/dcdc2420-5b11-4023-9512-909aef81025f)
 
