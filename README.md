@@ -1,5 +1,7 @@
 # Churn Modeling Analysis
 
+![Image](https://github.com/user-attachments/assets/dcdc2420-5b11-4023-9512-909aef81025f)
+
 ## Overview
 
 The **Churn Modeling Analysis** project predicts customer churn and identifies key factors influencing customer decisions to leave a company. By analyzing features such as credit score, age, balance, and membership status, this project helps businesses develop strategies to retain valuable customers and minimize churn. The dataset includes customer demographics, financial details, and activity status, providing a comprehensive view of customer behavior.
