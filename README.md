@@ -45,7 +45,8 @@ The dataset includes the following columns:
 - **Excel**: Pivot table analysis of churn trends across different customer groups.  
 
 ### 📊 3. **Power BI Dashboard**  
-The interactive **Power BI Dashboard** includes:  
+The interactive **Power BI Dashboard** includes: 
+- Customer Demographics
 - Churn Rate & Retention (Overall churn percentage & customer retention rate).  
 - Demographic Churn Trends (Geography, Age, Gender).  
 - Financial Impact on Churn (Balance, CreditScore, NumOfProducts).  
