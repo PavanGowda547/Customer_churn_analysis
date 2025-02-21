@@ -1,5 +1,5 @@
 # 📌 Customer Churn Analysis  
-
+![Image](https://github.com/user-attachments/assets/dcdc2420-5b11-4023-9512-909aef81025f)
 ## 📊 Overview  
 This project focuses on analyzing **customer churn** patterns to identify key factors influencing retention and attrition. By evaluating demographic, financial, and behavioral data, businesses can develop data-driven strategies to **minimize churn**, improve **customer engagement**, and enhance **profitability**.  
 
