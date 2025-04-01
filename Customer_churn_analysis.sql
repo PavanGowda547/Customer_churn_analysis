@@ -12,7 +12,16 @@ where table_name = 'churn_modelling';
 -- Previewing the Dataset
 select * from churn_modelling;
 
+-- Dataset Dimension Exploration
+select count(*) 
+from churn_modelling;
 
+select count(distinct customerid) 
+from churn_modelling;
+
+-- Unique countries
+select distinct geography 
+from churn_modelling;
 
 
 
@@ -40,9 +49,6 @@ from churn_modelling;
 
 
 -- 3. Dataset Analysis
--- Unique countries
-select distinct geography 
-from churn_modelling;
 
 -- Population Distribution
 select distinct geography, count(gender) as gender
@@ -59,3 +65,6 @@ select numof_products, count(*) as customer_count
 from churn_modelling
 group by numof_products
 order by numof_products ;
+
+
+select distinct customerid from churn_modelling;
