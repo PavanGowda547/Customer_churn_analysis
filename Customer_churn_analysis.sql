@@ -12,7 +12,11 @@ where table_name = 'churn_modelling';
 -- Previewing the Dataset
 select * from churn_modelling;
 
--- Dataset Dimension Exploration
+
+
+
+
+-- 2. Dataset Dimension Exploration
 select count(*) 
 from churn_modelling;
 
@@ -23,27 +27,39 @@ from churn_modelling;
 select distinct geography 
 from churn_modelling;
 
-
-
--- 2. Data cleaning & handling Missing Values
--- Identify Missing Values
 select 
-count(rowno) as row_no,
-count(customerid) as customer_id,
-count(surname) as surname,
-count(credit_score) as credit_score,
-count(geography) as geography,
-count(gender) as gender,
-count(age) as age,
-count(tenure) as tenure,
-count(balance) as balance,
-count(numof_products) as no_of_products,
-count(has_card) as has_card,
-count(isactive_memeber) as is_active_member,
-count(estimated) as estimated,
-count(exited) as exited
+max(tenure) as max_tenure,
+min(tenure) as min_tenure,
+round(avg(tenure),2) as avg_tenure
 from churn_modelling;
 
+select 
+max(balance) as max_balance,
+min(balance) as min_balance,
+round(avg(balance),2) as avg_balance
+from churn_modelling;
+
+
+
+
+-- 3. Dataset Measures Exploration
+Select 'total no of customers'as measure_names, count(customerid) as measure_values from churn_modelling
+union all 
+Select 'average balance per customer'as measure_names, round(avg(balance),2) as measure_values from churn_modelling
+union all 
+Select 'avg product per customer'as measure_names, round(avg(numof_products),2) as measure_values from churn_modelling
+union all 
+Select 'total credit card holders'as measure_names, sum(has_card) as measure_values from churn_modelling
+union all 
+Select 'total active members'as measure_names, sum(isactive_memeber) as measure_values from churn_modelling
+union all 
+Select 'total exited customers'as measure_names, sum(exited) as measure_values from churn_modelling;
+
+
+
+
+-- 4. Magnitude Analysis
+select 
 
 
 
