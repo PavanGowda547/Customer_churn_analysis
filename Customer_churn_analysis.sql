@@ -60,6 +60,30 @@ Select 'total exited customers'as measure_names, sum(exited) as measure_values f
 
 -- 4. Magnitude Analysis
 select 
+geography,
+count(customerid)as total_customers,
+round(avg(age),2)as average_age,
+count(gender like 'Male') as total_males,
+count(gender like 'Female') as total_females,
+round(avg(credit_score),2) as average_credit_score,
+round(avg(tenure),2) as avg_tenure,
+round(avg(numof_products),2) as average_products,
+round(avg(balance),2) as average_balance
+from churn_modelling
+group by(geography);
+
+select 
+gender,
+count(customerid)
+from churn_modelling
+group by(gender);
+
+select 
+distinct exited,
+count(customerid) as churned_customers
+from churn_modelling
+group by exited;
+
 
 
 
