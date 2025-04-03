@@ -88,23 +88,3 @@ group by exited;
 
 
 
--- 3. Dataset Analysis
-
--- Population Distribution
-select distinct geography, count(gender) as gender
-from churn_modelling
-group by geography
-order by count(gender) desc;
-
--- Average credit score, balance of customers, tenure
-select round(avg(credit_score), 2) as avg_credit_score, round(avg(balance),2) as avg_balance, round(avg(tenure), 2) as avg_tenure
-from churn_modelling;
-
--- Number of Products Distribution
-select numof_products, count(*) as customer_count
-from churn_modelling
-group by numof_products
-order by numof_products ;
-
-
-select distinct customerid from churn_modelling;
