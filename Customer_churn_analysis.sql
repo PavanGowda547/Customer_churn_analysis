@@ -1,11 +1,12 @@
 -- 1. Understanding the Dataset 
 
 -- Checking available Tables
+select * from information_schema.tables;
 select table_name from information_schema.tables
 where table_schema = 'public';
 
 -- Viewing Table Structure (Schema)
-select column_name, data_type
+select *
 from information_schema.columns
 where table_name = 'churn_modelling';
 
